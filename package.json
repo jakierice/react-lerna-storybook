@@ -1,0 +1,38 @@
+{
+	"name": "lerna-storybook-react",
+	"version": "0.1.0",
+	"description": "Basic boilerplate for React component library",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jakierice/react-lerna-storybook.git"
+	},
+	"main": "index.js",
+	"scripts": {
+		"start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
+		"test": "jest --verbose",
+		"build":
+			"lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js"
+	},
+	"keywords": ["lerna", "react", "storybook", "component-library"],
+	"author": "Jakie W. Rice",
+	"license": "MIT",
+	"devDependencies": {
+		"@storybook/react": "^3.3.15",
+		"babel-cli": "^6.26.0",
+		"babel-jest": "^23.0.0-alpha.0",
+		"babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"enzyme": "^3.3.0",
+		"enzyme-adapter-react-16": "^1.1.1",
+		"glob-loader": "^0.3.0",
+		"jest": "^22.4.2",
+		"lerna": "^2.9.0",
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0",
+		"react-test-renderer": "^16.2.0"
+	},
+	"jest": {
+		"setupTestFrameworkScriptFile": "<rootDir>/test-setup.js"
+	}
+}

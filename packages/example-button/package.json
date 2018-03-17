@@ -1,0 +1,11 @@
+{
+	"name": "example-button",
+	"version": "0.1.0",
+	"description": "An example button component",
+	"main": "dist/Button.js",
+	"author": "Jakie W. Rice",
+	"dependencies": {
+		"react": "^16.2.0"
+	},
+	"license": "MIT"
+}
